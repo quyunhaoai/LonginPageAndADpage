@@ -29,11 +29,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="去注册账号"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46z-eM-TLT">
-                    <rect key="frame" x="164" y="555" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="按钮"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.40022153558619433" blue="0.34616335010336563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

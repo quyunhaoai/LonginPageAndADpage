@@ -53,19 +53,18 @@
     [self.view addSubview:self.customPrepLoadingActView];
     UIImage * image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"0df3d7ca7bcb0a46f4c48af36263f6246a60af11" ofType:@"jpg"]];
     self.LaunchScreen.image = image;
-//    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+    
     
 }
 -(void)timerAction
 {
-    NSLog(@"%f",__FUNCTION__);
-    static int i = 3;
+    NSLog(@"%s",__FUNCTION__);
+    static int i = 10;
     if (i == 0) {
         [self chickAction:nil];
     }
     i --;
-//    self.mybutton.titleLabel.text = [NSString stringWithFormat:@"跳过(%d)",i];
     [self.mybutton setTitle:[NSString stringWithFormat:@"跳过(%d)",i] forState:UIControlStateNormal];
     
 }

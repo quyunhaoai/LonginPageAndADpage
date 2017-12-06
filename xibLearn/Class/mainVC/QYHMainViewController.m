@@ -24,7 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)longIn:(id)sender {
-    
     QYHLongInViewController *longInVc = [[QYHLongInViewController alloc]initWithNibName:@"QYHLongInViewController" bundle:nil];
     [self presentViewController:longInVc animated:YES completion:nil];
 }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,17 +22,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSK-I7-hEs">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-oV-h6n">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-4j-Z9c">
-                            <rect key="frame" x="304" y="20" width="51" height="30"/>
+                            <rect key="frame" x="297" y="20" width="58" height="30"/>
                             <color key="backgroundColor" white="0.44642843364197526" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="跳过(3)"/>
+                            <state key="normal" title="跳过(10)"/>
                             <connections>
                                 <action selector="chickAction:" destination="-1" eventType="touchUpInside" id="1td-f0-DfN"/>
                             </connections>
@@ -42,9 +41,9 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Wge-4j-Z9c" secondAttribute="trailing" constant="20" id="1ZR-mH-ptY"/>
+                        <constraint firstItem="CYg-oV-h6n" firstAttribute="top" secondItem="PSK-I7-hEs" secondAttribute="top" id="4j3-Qd-os2"/>
                         <constraint firstAttribute="trailing" secondItem="CYg-oV-h6n" secondAttribute="trailing" id="K8s-Hx-ruN"/>
                         <constraint firstAttribute="bottom" secondItem="CYg-oV-h6n" secondAttribute="bottom" id="YSL-M7-ELY"/>
-                        <constraint firstItem="CYg-oV-h6n" firstAttribute="top" secondItem="PSK-I7-hEs" secondAttribute="top" id="hWy-p7-B5g"/>
                         <constraint firstItem="CYg-oV-h6n" firstAttribute="leading" secondItem="PSK-I7-hEs" secondAttribute="leading" id="wVf-l5-yX7"/>
                         <constraint firstItem="Wge-4j-Z9c" firstAttribute="top" secondItem="PSK-I7-hEs" secondAttribute="top" constant="20" id="xRN-oe-iLO"/>
                     </constraints>
@@ -52,13 +51,12 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="PSK-I7-hEs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ntm-aI-8k0"/>
-                <constraint firstItem="PSK-I7-hEs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UBB-D3-VfZ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PSK-I7-hEs" secondAttribute="bottom" id="Ypp-89-nvh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PSK-I7-hEs" secondAttribute="trailing" id="gpc-YS-cqg"/>
+                <constraint firstItem="PSK-I7-hEs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ntm-aI-8k0"/>
+                <constraint firstItem="PSK-I7-hEs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UBB-D3-VfZ"/>
+                <constraint firstAttribute="bottom" secondItem="PSK-I7-hEs" secondAttribute="bottom" id="Ypp-89-nvh"/>
+                <constraint firstAttribute="trailing" secondItem="PSK-I7-hEs" secondAttribute="trailing" id="gpc-YS-cqg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>
 </document>
