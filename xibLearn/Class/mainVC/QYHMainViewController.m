@@ -26,10 +26,7 @@
 - (IBAction)longIn:(id)sender {
     
     QYHLongInViewController *longInVc = [[QYHLongInViewController alloc]initWithNibName:@"QYHLongInViewController" bundle:nil];
-//    [self presentViewController:longInVc animated:YES completion:nil];
-    [self presentViewController:longInVc animated:YES completion:^{
-        
-    }];
+    [self presentViewController:longInVc animated:YES completion:nil];
 }
 
 /*
